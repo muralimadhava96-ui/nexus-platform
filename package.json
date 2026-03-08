@@ -7,7 +7,12 @@
     "dev": "vite --port 3000",
     "build": "vite build",
     "preview": "vite preview --port 3000",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "setup": "bash scripts/setup.sh",
+    "check": "npm run lint && npm run build"
+  },
+  "engines": {
+    "node": ">=18.18.0"
   },
   "dependencies": {
     "react": "^18.2.0",
