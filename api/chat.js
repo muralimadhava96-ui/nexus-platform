@@ -64,8 +64,3 @@ export default async function handler(req, res) {
     });
   }
 }
-
-// Configure the function
-export const config = {
-  runtime: 'edge', // Use edge runtime for better performance
-};
